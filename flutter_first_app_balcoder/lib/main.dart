@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_first_app_balcoder/ui/home_page.dart';
+import 'package:flutter_first_app_balcoder/ui/user/home_page.dart';
+import 'package:flutter_first_app_balcoder/ui/user/user_formpage.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: UserFormPage(),
     );
   }
 }
