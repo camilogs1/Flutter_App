@@ -1,9 +1,11 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_first_app_balcoder/ui/user/home_page.dart';
 import 'package:flutter_first_app_balcoder/ui/user/user_formpage.dart';
 
-void main() {
-  runApp(MyApp());
+main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(new MyApp());
 }
 
 class MyApp extends StatelessWidget {
